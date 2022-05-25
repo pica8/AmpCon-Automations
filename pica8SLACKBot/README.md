@@ -1,6 +1,6 @@
 ## pica8SLACKBot :sparkles:
 # Pica8 SLACKBOT Example
-## Neal Trieber, Pica8, Inc. :wave:
+## Neal Trieber, [Pica8, Inc.](https://www.pica8.com) :wave:
 ## * PRELIMINARY STEPS / PREP * ######################
 - MUST....(Kidding) :stuck_out_tongue_winking_eye: *SHOULD* Read [Blog Post](link) for full instructions
 - MUST HAVE [PYTHON 3] (https://www.python.org/downloads/) pre-installed :smile:
@@ -32,7 +32,7 @@ sudo yum install ansible
 brew install ansible
 ```
 
-- MUST INSTALL [Pica8 Ansible Module](https://github.com/pica8/Ansible/tree/main/ansible_module/v3) if making ANSIBLE calls..
+- MUST INSTALL [Pica8's Ansible Module for PicOS](https://github.com/pica8/Ansible/tree/main/ansible_module/v3) if making ANSIBLE calls..
 ## ********************************************************************
 - STEP 1) [Create a SLACK account and SLACK Workspace](https://slack.com/help/articles/206845317-Create-a-Slack-workspace)
 -- Additional Reference: [Great Guide from TWILIO ON How to create a SLACK Account + SLACKBOT in 'Socket Mode'](https://www.twilio.com/blog/how-to-build-a-slackbot-in-socket-mode-with-python)
@@ -49,7 +49,7 @@ export SLACK_APP_TOKEN=xapp-****************************************************
 - USES [STREAMLIT](https://streamlit.io/) as a UI for Pica8/AmpCon Credential Entry ONLY (**pica8SLACKBot.py**)
 - USES CLI (instead of [STREAMLIT](https://streamlit.io/)) for secure Pica8/AmpCon Credential Entry (**pica8SLACKBot_NO_UI.py**)
 - USES ANSIBLE (via BASH SHELL calls) to interact with Pica8/PicOS CLI
-- USES Pica8's AmpCon REST APIs to interact with AmpCon - [API Docs](https://docs.pica8.com/display/ampcon/AmpCon+API+document)
+- USES Pica8's [AmpCon](https://www.pica8.com/ampcon-network-controller/) REST APIs to interact with [AmpCon](https://www.pica8.com/ampcon-network-controller/) - [API Docs](https://docs.pica8.com/display/ampcon/AmpCon+API+document)
 - SAMPLE Bash script provided (**launch_my_SLACK_Pica8SLACKBot.sh**) to start your SLACKBOT and "bash source" the included bash profile (DON'T FORGET TO EDIT IT: **mysecrets.profile**) to auto-import your newly created SLACK Keys into SHELL variables that the BOT REQUIRES
 - requirements.txt included to help you auto-install all of the needed Python modules :smile:
 #
