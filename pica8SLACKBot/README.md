@@ -2,7 +2,7 @@
 # Pica8 SLACKBOT Example
 ## Neal Trieber, [Pica8, Inc.](https://www.pica8.com) :wave:
 ## * PRELIMINARY STEPS / PREP * ######################
-- MUST....(Kidding) :stuck_out_tongue_winking_eye: *SHOULD* Read [Blog Post](link) for full instructions
+- MUST....(Kidding) :stuck_out_tongue_winking_eye: *SHOULD* Read [Blog Post](https://blog.pica8.com/the-evpn-vxlan-tunnel-of-love-part-3-meet-my-lovely-assistant) for full instructions
 - MUST HAVE [PYTHON 3] (https://www.python.org/downloads/) pre-installed :smile:
 -- Easy enough to install on Debian/UBUNTU:
 ```bash
