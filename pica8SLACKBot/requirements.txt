@@ -1,0 +1,4 @@
+requests==2.26.0
+simplejson==3.17.6
+slack_bolt==1.11.2
+streamlit==1.2.0
