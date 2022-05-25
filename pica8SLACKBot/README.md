@@ -46,11 +46,11 @@ export SLACK_APP_TOKEN=xapp-****************************************************
 ```
 ## NOTES AND FILES USED IN THIS SLACKBOT: 
 - USES "SOCKET MODE" (WebSocket Mode) so it DOES NOT REQUIRE 'NGROK' :smile:
-- USES STREAMLIT as a UI for Pica8/AmpCon Credential Entry ONLY (pica8SLACKBot.py)
-- USES CLI (instead of STREAMLIT) for secure Pica8/AmpCon Credential Entry (pica8SLACKBot_NO_UI.py)
+- USES STREAMLIT as a UI for Pica8/AmpCon Credential Entry ONLY (**pica8SLACKBot.py**)
+- USES CLI (instead of STREAMLIT) for secure Pica8/AmpCon Credential Entry (**pica8SLACKBot_NO_UI.py**)
 - USES ANSIBLE (via BASH SHELL calls) to interact with Pica8/PicOS CLI
 - USES Pica8's AmpCon REST APIs to interact with AmpCon - [API Docs](https://docs.pica8.com/display/ampcon/AmpCon+API+document)
-- SAMPLE Bash script provided (launch_my_SLACK_Pica8SLACKBot.sh) to start your SLACKBOT and "bash source" the included bash profile (DON'T FORGET TO EDIT IT: mysecrets.profile) to auto-import your newly created SLACK Keys into SHELL variables that the BOT REQUIRES
+- SAMPLE Bash script provided (**launch_my_SLACK_Pica8SLACKBot.sh**) to start your SLACKBOT and "bash source" the included bash profile (DON'T FORGET TO EDIT IT: **mysecrets.profile**) to auto-import your newly created SLACK Keys into SHELL variables that the BOT REQUIRES
 - requirements.txt included to help you auto-install all of the needed Python modules :smile:
 #
 ```bash
