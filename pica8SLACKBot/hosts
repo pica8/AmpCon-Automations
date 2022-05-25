@@ -1,0 +1,79 @@
+# This is the default ansible 'hosts' file.
+#
+# It should live in /etc/ansible/hosts
+#
+#   - Comments begin with the '#' character
+#   - Blank lines are ignored
+#   - Groups of hosts are delimited by [header] elements
+#   - You can enter hostnames or ip addresses
+#   - A hostname/ip can be a member of multiple groups
+
+# Ex 1: Ungrouped hosts, specify before any group headers.
+
+## green.example.com
+## blue.example.com
+## 192.168.100.1
+## 192.168.100.10
+
+# Ex 2: A collection of hosts belonging to the 'webservers' group
+
+## [webservers]
+## alpha.example.org
+## beta.example.org
+## 192.168.1.100
+## 192.168.1.110
+
+## lab43
+
+#[spines]
+#172.16.0.10[1:2]
+#spine_a ansible_host=172.16.0.112 
+#172.16.0.112 
+#172.16.0.119 
+
+#[leafs]
+#172.16.0.11[1:4]
+
+
+
+# If you have multiple hosts following a pattern you can specify
+# them like this:
+
+## www[001:006].example.com
+
+# Ex 3: A collection of database servers in the 'dbservers' group
+
+## [dbservers]
+## 
+## db01.intranet.mydomain.net
+## db02.intranet.mydomain.net
+## 10.25.1.56
+## 10.25.1.57
+
+# Here's another example of host ranges, this time there are no
+# leading 0s:
+
+## db-[99:101]-node.example.com
+
+[pica8vms]
+#picosv ansible_host=10.10.10.79 ansible_port=22 ansible_user=admin ansible_ssh_pass=pica8
+picosv ansible_host=10.10.10.55 ansible_port=22 ansible_user=admin ansible_ssh_pass=pica8
+
+#evpn-clos01 ansible_host=10.88.88.33 ansible_port=22 ansible_user=admin ansible_ssh_pass=pica8
+
+[pica8lab]
+evpn-clos01 ansible_host=10.33.33.33 ansible_port=22 ansible_user=admin ansible_ssh_pass=pica8
+
+
+[lab]
+server16 ansible_host=172.16.0.16 ansible_port=22 ansible_user=lab ansible_ssh_pass=pronto
+server43 ansible_host=172.16.0.43 ansible_port=22 ansible_user=lab ansible_ssh_pass=pronto
+server44 ansible_host=172.16.0.44 ansible_port=22 ansible_user=lab ansible_ssh_pass=pronto
+
+[linux]
+pony  ansible_host=172.16.1.126 ansible_port=22 ansible_user=lab ansible_ssh_pass=pronto
+puppy ansible_host=172.16.1.127 ansible_port=22 ansible_user=lab ansible_ssh_pass=pronto
+
+[debian]
+172.16.1.128
+ec4610 ansible_host=172.16.1.128 ansible_port=22 ansible_user=admin ansible_ssh_pass=pica8
