@@ -52,6 +52,7 @@ import string
 from slack_bolt import App
 from slack_bolt.adapter.socket_mode import SocketModeHandler
 import getpass
+
 inputfile= ''
 pica8apikey = ''
 pica8instance = ''
@@ -271,7 +272,7 @@ headers = {
     #print ("Sending these headers: " + headers)
 
 
-context.picosARGS = ImmutableDict(connection='smart', module_path=['/to/mymodules /usr/share/ansible'], forks=10, become=None, become_method=None, become_user=None, check=False, diff=False, verbosity=0)
+#context.picosARGS = ImmutableDict(connection='smart', module_path=['/to/mymodules /usr/share/ansible'], forks=10, become=None, become_method=None, become_user=None, check=False, diff=False, verbosity=0)
 
 # Initializes your app with your bot token and socket mode handler
 app = App(token=os.environ.get("SLACK_BOT_TOKEN"))
