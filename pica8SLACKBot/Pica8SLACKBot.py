@@ -49,7 +49,7 @@ import textwrap
 import time
 import random
 import string
-from slack_bolt import App
+from slack_bolt import App, Say
 from slack_bolt.adapter.socket_mode import SocketModeHandler
 import getpass
 
